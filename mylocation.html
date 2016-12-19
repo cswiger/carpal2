@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>EON Maps</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position:absolute;
+        top:0;
+        bottom:0;
+        width:100%;
+      }
+    </style>
+
+    <link href="../lib/mapbox.css" rel="stylesheet" />
+    <script src="../../subsub/subsub.js"></script>
+    <script src="../lib/mapbox.js"></script>
+
+    <script src="../bower_components/pubnub/web/pubnub.min.js"></script>
+    <script src="../pubnub-mapbox.js"></script>
+
+  </head>
+  <body>
+    <div id='map'></div>
+
+         <script>
+var pubnub = PUBNUB({ subscribe_key: 'sub-c-xxxxxxxx-yyyy-zzzz-aaaa-bbbbbbbbbbbb', ssl: true });
+var channel = 'cardata';
+
+var map = eon.map({
+pubnub: pubnub,
+id: 'map',
+mb_token: 'pk.zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz',
+mb_id: 'cswiger.o3oich80',
+channel: channel,
+options: {
+          zoomAnimation: false,
+        },
+        message: function(data) {
+          map.setView(data[0].latlng,13);
+        },
+        marker: function (latlng, data) {
+
+            var marker = new L.Marker(latlng, {
+                icon: L.icon({
+                    iconUrl: 'http://yourserver.com/car_icon.png',
+                    iconSize: [24, 24]
+                })
+            });
+
+            var popup = '';
+            if (data) {
+                popup = 'Courier ' + data + '';
+            }
+            else {
+                var popup = 'No data available';
+            }
+
+            marker.bindPopup(popup);
+
+            return marker;
+        }
+      });
+
+           var point = {
+          latlng: [37.8267,-122.423]
+      };
+
+    </script>
+  </body>
+</html>
+
