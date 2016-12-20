@@ -9,7 +9,7 @@ main.cpp/main.h is my example code from the mbed.org development environment. It
 FXOS8700CQ   for the accelerometer<br/>
 mbed-rtos   for the timer<br/>
 Pubnub_mbed2_sync    for Pubnub support<br/>
-WNCInterface      for the cell model shield<br/>
+WNCInterface      for the cell modem shield<br/>
 
 Also needs the files:  <br/>
 hts221_driver.cpp HTS221.h<br/>
