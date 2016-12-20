@@ -5,14 +5,14 @@ The Pubnub queue watcher "pubnub_mongo_attiot.js", to load MongoDB, will need yo
 
 The mylocation.html eon-map - just follow the instructions at https://github.com/pubnub/eon-map to setup a mapbox account and map, etc. 
 
-main.cpp/main.h is my example code from the mbed.org development environment. It also needs libraries:  
-FXOS8700CQ   for the accelerometer
-mbed-rtos   for the timer
-Pubnub_mbed2_sync    for Pubnub support
-WNCInterface      for the cell model shield
+main.cpp/main.h is my example code from the mbed.org development environment. It also needs libraries:  <br/>
+FXOS8700CQ   for the accelerometer<br/>
+mbed-rtos   for the timer<br/>
+Pubnub_mbed2_sync    for Pubnub support<br/>
+WNCInterface      for the cell model shield<br/>
 
-Also needs the files:  
-hts221_driver.cpp HTS221.h
-pubnub_config.h
-sensors.cpp sensors.h
-xadow_gps.cpp  xadow_gps.h
+Also needs the files:  <br/>
+hts221_driver.cpp HTS221.h<br/>
+pubnub_config.h<br/>
+sensors.cpp sensors.h<br/>
+xadow_gps.cpp  xadow_gps.h<br/>
