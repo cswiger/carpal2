@@ -18,7 +18,7 @@ function insertEvent(payload) {
       mongodbClient.connect(mongodbURI, function(err,db) {
           if(err) { console.log(err); return; }
           else {
-              console.log(payload['message']['message']);
+              console.log(payload['message']);
               var coll = 'carpal2';
               collection = db.collection(coll);
               obj = payload['message'];
