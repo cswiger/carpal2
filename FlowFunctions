@@ -34,6 +34,8 @@ msg.payload = {
         { "timestamp": timestamp, "value": msg.payload.ol  }],
     "speed": [ 
         { "timestamp": timestamp, "value": msg.payload.os  }],    
+    "coolant": [ 
+        { "timestamp": timestamp, "value": msg.payload.oc  }],
     }
 };
 return msg;
