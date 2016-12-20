@@ -1,0 +1,50 @@
+Function: ReformatLatLongEon
+var newMsg = {};
+if (msg.payload.la != null & msg.payload.lo != null) {
+  newMsg.payload = [{"latlng":[msg.payload.la,msg.payload.lo]}];
+  return newMsg;
+} else {
+    return null
+}
+
+
+Function: SetupM2X
+//Post multiple values to multiple streams example
+
+var timestamp = new Date().getTime();   // 
+timestamp = new Date(timestamp).toISOString();
+msg.url = "https://api-m2x.att.com/v2/devices/";
+var deviceID = '________your_device_id_here_____';
+msg.url += deviceID + "/updates";
+
+msg.headers = {
+    "X-M2X-KEY": "_____your_m2x_key_here__________",
+    "content-type": "application/json"
+};
+
+msg.payload = {
+    "values": {
+    "ax": [
+        { "timestamp": timestamp, "value": msg.payload.ax  }],
+    "ay": [
+        { "timestamp": timestamp, "value": msg.payload.ay  }],
+    "RPM": [
+        { "timestamp": timestamp, "value": msg.payload.or  }],
+    "load": [ 
+        { "timestamp": timestamp, "value": msg.payload.ol  }],
+    "speed": [ 
+        { "timestamp": timestamp, "value": msg.payload.os  }],    
+    }
+};
+return msg;
+
+
+
+Function: return dtc codes
+if (msg.payload['1'] != null) {
+  return msg;
+} else {
+  return null 
+}
+
+
