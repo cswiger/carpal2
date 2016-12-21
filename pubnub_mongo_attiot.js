@@ -25,7 +25,7 @@ function insertEvent(payload) {
               if (obj['ax'] != null & obj['ay'] != null) {  // channel is used for led control also so ignore
                  collection.insert(
                     //{ data:payload['message'], when:new Date() },
-                    {ax:obj['ax'],ay:obj['ay'],lo:obj['lo'],la:obj['la'],when:new Date() },
+                    {ax:obj['ax'],ay:obj['ay'],lo:obj['lo'],la:obj['la'],oc:obj['oc'],or:obj['or'],ol:obj['ol'],os:obj['os'],when:new Date() },
                     function(err,docs) {
                        if(err) { console.log("Insert fail" + err); } // Improve error handling
                        else { console.log("Update callback - closing db");
