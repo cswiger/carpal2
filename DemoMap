@@ -1,0 +1,155 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "speed": 0,
+        "rpm": 1503,
+        "load": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.10334,
+          38.052418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "speed": 14,
+        "rpm": 1584,
+        "load": 50
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.102753,
+          38.052387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "speed": 22,
+        "rpm": 1642,
+        "load": 21
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.100395,
+          38.053982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "speed": 17,
+        "rpm": 1268,
+        "load": 23
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.0981364,
+          38.054992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "speed": 19,
+        "rpm": 1359,
+        "load": 18
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.096077,
+          38.055882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "speed": 18,
+        "rpm": 1227,
+        "load": 18
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.096092,
+          38.057236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "speed": 24,
+        "rpm": 1883,
+        "load": 27
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.09774,
+          38.056976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "speed": 22,
+        "rpm": 1301,
+        "load": 26
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.100487,
+          38.05526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "speed": 21,
+        "rpm": 992,
+        "load": 18
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.102898,
+          38.053558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "speed": 2,
+        "rpm": 780,
+        "load": 23
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.103333,
+          38.052364
+        ]
+      }
+    }
+  ]
+}
